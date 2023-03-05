@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="reset.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <title>Weather Dashboard</title>
+   </head>
+   <body>
+      <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+         <h2>Weather Dashboard</h2>
+      </header>
+      <div class="container-fluid" style="max-width: 1400px">
+         </br> 
+         <div class="row">
+            <div class="col-lg-3 pb-3">
+               <h4>Search for a city:</h4>
+               <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="cityInput" placeholder="London" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append mt">
+                     <button type="submit" class="btn btn-outline-primary w-100 rounded" id="citySearchBtn" aria-label="submit search">
+                     Search
+                     </button>
+                     <hr class="hr weather-hr" />
+                  </div>
+               </div>
+               <div class="list-group" id="cityList">
+               </div>
+            </div>
+            <div class="col-9">
+               <div class="card" style="width: 100%;" id="weatherContainer"></div>
+               <div id="forecastContainer"></div>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
